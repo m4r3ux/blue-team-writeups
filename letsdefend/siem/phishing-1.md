@@ -13,7 +13,7 @@ Lab simulando a investigação de um evento em ambiente real de SOC a partir da 
 - Assunto: Free Coffee Voucher    
 - Ação do dispositivo: Permitir    
 
-![[imagem1.png]]
+![[images/imagem1.png]]
   
 ---  
   
@@ -23,7 +23,7 @@ Ao analisar o endereço IP 103.80.134.63 no VirusTotal, foram identificadas dive
   
 Além disso, o IP está geolocalizado na Coreia do Sul, o que pode indicar uso de infraestrutura suspeita ou comprometida para envio de campanhas maliciosas.  
 
-![[imagem2.png]]
+![[images/imagem2.png]]
   
 ---  
   
@@ -33,7 +33,7 @@ Buscando pelo remetente free@coffeeshooop.com nos registros de e-mail do SIEM, f
   
 O e-mail se trata de uma oferta de café gratuito, incentivando o usuário a clicar em um botão para reivindicar o voucher, caracterizando uma tentativa de phishing baseada em engenharia social.  
 
-![[imagem3.png]]
+![[images/imagem3.png]]
   
 ---  
   
@@ -77,7 +77,7 @@ Após o download, analisando os processos no endpoint do usuário Felix, foram o
 Isso confirma a interação do usuário com o arquivo malicioso e a execução do payload.  
 
 
-![[imagem5.png]]
+![[images/imagem5.png]]
   
 ---  
   
@@ -90,7 +90,7 @@ CD903AD2211CF7D166646D75E57FB866000F4A3B870B5EC759929BE2FD81D334
   
 Ao analisar o hash no VirusTotal, foram identificadas diversas detecções classificando o arquivo como o trojan AsyncRAT.  
 
-![[imagem6.png]]
+![[images/imagem6.png]]
   
 ---  
   
@@ -107,7 +107,7 @@ Após a execução, foram observadas atividades suspeitas no endpoint, incluindo
   
 Esses comandos indicam atividades de enumeração do sistema, com o objetivo de coletar informações da máquina comprometida.  
 
-![[imagem7.png]]
+![[images/imagem7.png]]
   
 ---  
   
@@ -143,4 +143,4 @@ O alerta foi escalado com todas as evidências coletadas, incluindo:
 - Execução do payload    
 - Atividade maliciosa no endpoint
 
-![[imagem8.png]]
+![[images/imagem8.png]]
